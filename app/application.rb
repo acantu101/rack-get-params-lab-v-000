@@ -12,6 +12,7 @@ class Application
          @@items.include?(search_term) == false
              resp.write "We don't have that item"
            @@items << search_term
+           search_term
         end
 
     if req.path.match(/items/)
