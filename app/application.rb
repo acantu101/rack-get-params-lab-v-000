@@ -4,7 +4,6 @@ class Application
    @@cart  = []
 
 
-   Adam Weissman to Everyone (10:04 PM)
  def call(env)
      resp = Rack::Response.new
      req = Rack::Request.new(env)
@@ -38,3 +37,4 @@ class Application
 
      resp.finish
    end
+ end
